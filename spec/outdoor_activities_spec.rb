@@ -11,5 +11,7 @@ feature 'CRUDing Outdoor Activities' do
     fill_in 'edit_activity', with: 'camping'
     click_on 'Update'
     expect(page).to have_content('camping')
+    click_on 'Delete'
+    expect(page).to_not have_content('camping')
   end
 end

@@ -22,4 +22,10 @@ class ActivitiesController < ApplicationController
     redirect_to '/'
   end
 
+  def destroy
+    activity =Activity.find(params[:id])
+    activity.destroy
+    redirect_to '/'
+  end
+
 end

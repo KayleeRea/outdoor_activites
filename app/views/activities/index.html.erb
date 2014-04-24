@@ -8,6 +8,7 @@
     <tr>
       <td>Activity: <%= activity.activity %></td>
       <td><%= button_to 'Edit', { action: 'edit', id: activity.id }, method: :get%> </td>
+      <td><%= button_to 'Delete', { action: 'destroy', id: activity.id }, method: :delete%> </td>
   <% end %>
   </tr>
 </table>

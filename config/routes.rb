@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   put 'edit/:id', to:'activities#update'
 
+  delete '/:id', to:'activities#destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,11 @@
+<h1>Outdoorsy guy or gal?</h1>
+<h2>Click below and enter your favorite outdoor activity!</h2>
+
+<a href="/new">Add an Activity</a>
+
+<table>
+  <% @activities.each do |activity| %>
+    <tr>
+      <td>Activity: <%= activity.activity %></td>
+  <% end %>
+</table>

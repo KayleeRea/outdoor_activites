@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   post '/', to:'activities#create'
 
+  get 'edit/:id', to:'activities#edit'
+
+  put 'edit/:id', to:'activities#update'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

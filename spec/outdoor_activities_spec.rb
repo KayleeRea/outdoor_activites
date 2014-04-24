@@ -7,5 +7,9 @@ feature 'CRUDing Outdoor Activities' do
     fill_in 'activity', with: 'kayaking'
     click_on 'Add'
     expect(page).to have_content('kayaking')
+    click_on 'Edit'
+    fill_in 'edit_activity', with: 'camping'
+    click_on 'Update'
+    expect(page).to have_content('camping')
   end
 end
